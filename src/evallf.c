@@ -12,32 +12,18 @@
 /* written by K. Gross, Nov 2000, with guidance from D. Bates.                    */
 
 #include <math.h>
-#include <R.h>
 #define MAX_VARS 50 /*  maximum number of variables */
 
-void evallf(double data[], int *nv, int freq[], int *nbl,
-	    int pa[], double pars[], double* val)
+void evallf(double data[], int *nv, int freq[], int *nbl, int pa[], double pars[], double* val)
 {
-    int iblock, datacounter=0, nvars = *nv, nblocks = *nbl;
-    int i,j,k,pcount,acount,muplace,idata;
-    double **del, **subdel, c, d;
-    double *newcol1, *newcol2;
-    double diagsum;
-    double *pmu, *prod;
+  int iblock, datacounter=0, nvars = *nv, nblocks = *nbl;
+  int i,j,k,pcount,acount,muplace,idata;
+  double del[MAX_VARS][MAX_VARS]={0.0}, subdel[MAX_VARS][MAX_VARS]={0.0},c,d;
+  double newcol1[MAX_VARS]={0.0},newcol2[MAX_VARS]={0.0};
+  double diagsum;
+  double pmu[MAX_VARS]={0.0}, prod[MAX_VARS]={0.0};
 
-    newcol1 = Calloc(nvars, double);
-    newcol2 = Calloc(nvars, double);
-    pmu = Calloc(nvars, double);
-    prod = Calloc(nvars, double);
-    del = Calloc(nvars, double*);
-    subdel = Calloc(nvars, double*);
-    for (i = 0; i < nvars; i++) {
-	del[i] = Calloc(nvars, double);
-	subdel[i] = Calloc(nvars, double);
-    }
-
-
-    *val=0.0;
+  *val=0.0;
 
   /* construct the full del */
 
@@ -168,11 +154,6 @@ void evallf(double data[], int *nv, int freq[], int *nbl,
 	    *val += prod[j]*prod[j];
 	}
     datacounter += pcount*freq[iblock];  
+
     }
-  Free(prod); Free(pmu); Free(newcol2); Free(newcol1);
-  for (i = 0; i < nvars; i++) {
-      Free(del[i]);
-      Free(subdel[i]);
-  }
-  Free(del); Free(subdel);
 }

@@ -8,10 +8,10 @@ The \code{apple} data frame provides the number of apples (in 100s) on
 worms (x 100) is also given.
 }
 \format{
-  This data frame contains the following columns:
-  \describe{
-    \item{size} hundreds of apples on the tree.
-    \item{worms} percentage (x100) of apples harboring worms.
+    This data frame contains the following columns:
+    \describe{
+    \item{size}{hundreds of apples on the tree.}
+    \item{worms}{percentage (x100) of apples harboring worms.}
   }
 }
 \details{
@@ -32,5 +32,9 @@ data(apple)
 mlest(apple)
 }
 \keyword{datasets}
+
+
+
+
 
 

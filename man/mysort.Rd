@@ -1,6 +1,6 @@
 \name{mysort}
 \alias{mysort}
-\title{Sort a multivariate data matrix according to patterns of missingness}
+\title{ Sort a multivariate data matrix according to patterns of missingness.}
 \description{
   \code{mysort} sorts a multivariate data matrix so that records with
   identical patterns of missingness are adjacent to one another.

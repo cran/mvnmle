@@ -1,6 +1,6 @@
 \name{getstartvals}
 \alias{getstartvals}
-\title{Obtain starting values for maximum likelihood estimation}
+\title{Obtain starting values for maximum likelihood estimation.}
 \description{
   Calculates the starting values to be passed to \code{nlm} for
   minimization of the negative log-likelihood for multivariate normal
