@@ -1,6 +1,6 @@
 \name{make.del}
 \alias{make.del}
-\title{ Make the upper triangular matrix del from a parameter vector }
+\title{Make the upper triangular matrix del from a parameter vector}
 \description{
   \code{make.del} takes a parameter vector of length \eqn{k*(k+1)/2} and
   returns the upper triangular \eqn{k \times k} matrix \eqn{\Delta}.
@@ -32,4 +32,4 @@ make.del(pars)
 
 \seealso{ \code{\link{mlest}} }
 
-\keyword{algebra}
+\keyword{multivariate}

@@ -1,6 +1,6 @@
 \name{getclf}
 \alias{getclf}
-\title{Create likelihood function for multivariate data with missing values.}
+\title{Create likelihood function for multivariate data with missing values}
 \description{
   \code{getclf} returns a function proportional to twice the negative
   log likelihood function for multivariate normal data with missing

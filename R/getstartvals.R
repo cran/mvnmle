@@ -3,7 +3,7 @@ getstartvals<-function(x,eps=1e-03)
     # Returns starting values for the relative precision matrix delta 
     n<-ncol(x)
     startvals<-double(n+n*(n+1)/2)
-    startvals[1:n]<-apply(x,2,mean,na.rm=TRUE)
+    startvals[1:n]<-apply(x,2,mean,na.rm=T)
     
     sampmat<-cov(x,use="p") # sample var-cov matrix
     eig<-eigen(sampmat,symmetric=TRUE)
