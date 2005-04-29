@@ -4,7 +4,7 @@ getclf                  Create likelihood function for multivariate
 getstartvals            Obtain starting values for maximum likelihood
                         estimation.
 make.del                Make the upper triangular matrix del from a
-                        parameter vector 
+                        parameter vector
 missvals                A multivariate data set with missing values.
 mlest                   ML Estimation of Multivariate Normal Data
 mysort                  Sort a multivariate data matrix according to
