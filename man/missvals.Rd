@@ -11,7 +11,7 @@ multivaraite normal data when some observations are missing.
 \format{
 This data frame contains the following columns:
 \describe{
-\item{x1--x5}{
+\item{x1,x2,x3,x4,x5}{
 numeric vectors
 }
 }

@@ -19,6 +19,6 @@ getclf<-function(data, freq)
 
     function(pars){
       .C("evallf",as.double(data),as.integer(nvars),as.integer(freq),
-         as.integer(length(freq)),as.integer(presabs),as.double(pars),val=double(1))$val;
+         as.integer(length(freq)),as.integer(presabs),as.double(pars),val=double(1),PACKAGE="mvnmle")$val;
     }
   }
