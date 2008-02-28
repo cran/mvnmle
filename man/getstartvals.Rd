@@ -29,7 +29,7 @@ getstartvals(x, eps=0.001)
       factor of the adjusted sample variance-covariance matrix, and then
       the elements of the inverse of the Cholesky factor above the main diagonal.  These off-diagonal elements are
       ordered by column (left to right), and then by row within column
-      (top to bottom).}
+      (top to bottom).
 }
 
 \seealso{  \code{\link{mlest}} }

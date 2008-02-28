@@ -19,7 +19,7 @@ mlest<-function(data,...)
     del<-make.del(mle$estimate[-(1:nvars)]) # extract estimates of sigmahat
     factor<-solve(del,diag(nvars))
     sigmahat<-t(factor) %*% factor
-    list(muhat=muhat, sigmahat=sigmahat, value=mle$minimum, gradient=mle$gradient,
+    list(muhat=muhat, sigmahat=sigmahat, value=mle$minimum, gradient=mle$gradient, hessian=mle$hessian,
          stop.code=mle$code, iterations=mle$iterations)
   }
 
