@@ -20,8 +20,8 @@ mlest(data, ...)
   The estimate of the variance-covariance matrix returned by
   \code{mlest} is necessarily positive semi-definite.  Internally,
   \code{nlm} is used to minimize the negative log-likelihood, so
-  optional arguments may be passed to \code{nlm} which modify the
-  details of the minimization algorithm, such as \code{hessian=TRUE} and \code{iterlim}.  The
+  optional arguments mayh be passed to \code{nlm} which modify the
+  details of the minimization algorithm, such as \code{iterlim}.  The
   likelihood is specified in terms of the inverse of the Cholesky factor
   of the variance-covariance matrix (see Pinheiro and Bates 2000).
 
@@ -42,7 +42,6 @@ mlest(data, ...)
       factor above the main diagonal.  These off-diagonal elements are
       ordered by column (left to right), and then by row within column
       (top to bottom).}
-  \item{hessian}{The Hessian of the likelihood surface at the MLE.  Uses the same parameterization as \code{gradient} (see above).  Only provided if \code{mlest} is passed the optional argument \code{hessian=TRUE}; otherwise returns null.}
   \item{stop.code}{The stop code returned by \code{nlm}.}
   \item{iterations}{The number of iterations used by \code{nlm}.}
      

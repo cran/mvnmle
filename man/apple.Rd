@@ -1,5 +1,6 @@
 \name{apple}
 \alias{apple}
+\non_function{}
 \title{Worm Infestations in Apple Crops}
 \description{
 The \code{apple} data frame provides the number of apples (in 100s) on

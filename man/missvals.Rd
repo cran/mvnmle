@@ -1,5 +1,6 @@
 \name{missvals}
 \alias{missvals}
+\non_function{}
 \title{A multivariate data set with missing values.}
 \description{
 The \code{missvals} data frame has 13 rows and 5 columns.
