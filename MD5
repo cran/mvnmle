@@ -1,13 +1,12 @@
-27906a674a807db3d4abd03f5753aa8f *DESCRIPTION
-f43696fe391b8c9f166a978f850b8a2e *INDEX
-e291ea2cc5312d02c43c5a3e9d2cec08 *NAMESPACE
+9e676197a27967f217762527738bdf5f *DESCRIPTION
+575c288d189638f4931c0ddcd45becd2 *NAMESPACE
 36660e80517ec6c0e3088f098eff2caf *R/getclf.R
 80ba7060846c626365b57022f31acdc3 *R/getstartvals.R
 8e6e3ed5272415c4abf7b8f6ab9b5364 *R/make.del.R
 dce843a2befb814b921af300619a2a36 *R/mlest.R
 6399648f16a2fe8ce5f2ecdce57033a3 *R/mysort.R
-f136d2f2b947ca310be909acdccbbc54 *data/apple.rda
-ab1291eb8aa6f6d5537c1869691954cb *data/missvals.rda
+505900b32f368f8e5ec01cf6194ec1ac *data/apple.rda
+6d9edc3321e0a9fbe4f7c04a1e9f8b15 *data/missvals.rda
 e898c2a7c171d4e461a924db071273fb *man/apple.Rd
 12d5c726fa3b9798b55b64af38f8f16f *man/getclf.Rd
 95af3316edae71efb51a86b7fe77ab13 *man/getstartvals.Rd
@@ -15,4 +14,4 @@ b46bdcbf6d3b8ee63f587fa2bb9a3fd5 *man/make.del.Rd
 4c1236c25b556aad64cabf54a13127c9 *man/missvals.Rd
 0b11b54248fc8ca858f6c86eb1684368 *man/mlest.Rd
 aa32437b970c3bdffce0dd8deece8351 *man/mysort.Rd
-920aa0c19a1acaaf872355558711008a *src/evallf.c
+8a05e98d91ec7662052dba8f9c314232 *src/evallf.c

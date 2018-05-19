@@ -1,4 +1,6 @@
 useDynLib("mvnmle")
 
+importFrom("stats", "cov", "nlm")
+
 # Export all names
 exportPattern(".")

@@ -83,7 +83,7 @@ void evallf(double data[], int *nv, int freq[], int *nbl, int pa[], double pars[
 	  for(j=0;j<i;j++)    /* in each row, start with column 1 and move right to the main daigonal */
 	    {
 	      /* zero out subdel[i][j] */
-	      if(subdel[i][j]<.000001 & subdel[i][j]>-.000001)
+	      if((subdel[i][j]<.000001) & (subdel[i][j]>-.000001))
 		subdel[i][j]=0;
 	      else
 		{
